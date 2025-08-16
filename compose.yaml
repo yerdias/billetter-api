@@ -8,8 +8,7 @@ services:
     ports:
       - 15433:5432
     volumes:
-      - biletter-db:/var/lib/postgresql/data
-
+      - biletter-db:/var/lib/postgresql/data  # этот volume нужно определить
 
 volumes:
-  medtech_service_db:
+  biletter-db:   # исправлено с medtech_service_db
