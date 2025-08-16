@@ -11,4 +11,4 @@ services:
       - biletter-db:/var/lib/postgresql/data  # этот volume нужно определить
 
 volumes:
-  biletter-db:   # исправлено с medtech_service_db
+  medtech_service_db:
