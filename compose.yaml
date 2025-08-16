@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      - POSTGRES_DB=billetter-db
+      - POSTGRES_PASSWORD=billetter
+      - POSTGRES_USER=billetter
+    ports:
+      - 15433:5432
+    volumes:
+      - medtech_service_db:/var/lib/postgresql/data
+
+
+volumes:
+  medtech_service_db:
