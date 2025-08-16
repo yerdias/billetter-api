@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 @Table(name = "users")
 public class User {
 
-    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
@@ -47,12 +46,4 @@ public class User {
 
     @Column(name = "last_logged_in", nullable = false)
     private LocalDateTime lastLoggedIn;
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
 }
