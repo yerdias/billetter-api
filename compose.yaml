@@ -1,3 +1,4 @@
+
 services:
   postgres:
     image: postgres:17
@@ -11,4 +12,4 @@ services:
       - biletter-db:/var/lib/postgresql/data  # этот volume нужно определить
 
 volumes:
-  medtech_service_db:
+  biletter-db:   # исправлено с medtech_service_db
