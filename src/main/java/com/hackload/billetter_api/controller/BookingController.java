@@ -18,7 +18,7 @@ public class BookingController {
     @PostMapping
     public ResponseEntity<CreateBookingResponse> createBooking(@RequestBody CreateBookingRequest request) {
         CreateBookingResponse response = new CreateBookingResponse();
-        response.setId(UUID.randomUUID());
+        response.setId(100L);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
@@ -33,7 +33,7 @@ public class BookingController {
 
     @PatchMapping("/cancel")
     public ResponseEntity<String> cancelBooking(@RequestBody CancelBookingRequest request) {
-        request.setBookingId(UUID.randomUUID());
+        request.setBookingId(100L);
         return ResponseEntity.ok("Бронь успешно отменена");
     }
 }

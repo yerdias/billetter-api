@@ -6,5 +6,5 @@ import java.util.UUID;
 
 @Data
 public class CreateBookingRequest {
-    private UUID eventId;
+    private long eventId;
 }

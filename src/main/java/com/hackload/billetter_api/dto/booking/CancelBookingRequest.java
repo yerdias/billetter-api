@@ -6,6 +6,6 @@ import java.util.UUID;
 
 @Data
 public class CancelBookingRequest {
-    private UUID bookingId;
+    private long bookingId;
 
 }
